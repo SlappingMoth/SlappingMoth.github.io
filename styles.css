@@ -34,5 +34,6 @@ header h1 {
 
 .banner {
   text-align: center;
-  background-color: yellow;
+  background-color: #fdce12;
+  color: #2088c5;
 }
