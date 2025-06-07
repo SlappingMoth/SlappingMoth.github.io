@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+div {
+  width: 150x;
+  border: 1px solid #000000;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
