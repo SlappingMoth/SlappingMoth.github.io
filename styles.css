@@ -13,19 +13,25 @@ body {
 }
 
 button {
-      margin-top: 1.5rem;
-      padding: 0.7rem;
-      font-size: 1rem;
-      background-color: #3ac569;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
+  margin-top: 1.5rem;
+  padding: 0.7rem;
+  font-size: 1rem;
+  background-color: #3ac569;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
 
-    button:hover {
-      background-color: #2fa257;
-    }
+button:hover {
+  background-color: #2fa257;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button-2 {
+  border-radius: 50%;
+  float: left;
+}
 
 /* Container */
 .container {
