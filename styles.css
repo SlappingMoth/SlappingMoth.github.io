@@ -12,6 +12,21 @@ body {
   background-color: #f8f9fa;
 }
 
+button {
+      margin-top: 1.5rem;
+      padding: 0.7rem;
+      font-size: 1rem;
+      background-color: #3ac569;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2fa257;
+    }
+
 /* Container */
 .container {
   width: 90%;
