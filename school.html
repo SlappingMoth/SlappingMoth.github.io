@@ -4,14 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>School Projects - Maverick Clements</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f9f9f9; color: #333; }
-    header { background: #222; color: #fff; padding: 1rem; text-align: center; }
-    main { max-width: 900px; margin: auto; padding: 2rem; }
-    section { background: #fff; margin-bottom: 1.5rem; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    h2 { margin-top: 0; color: #222; }
-    p { margin: 0.5rem 0; }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -20,28 +13,29 @@
         <div class="nav-left">
             <a href="index.html" class="nav-link">Home</a>
             <a href="resume.html" class="nav-link">About</a>
-        <div></div> class="dropdown">
+        <div class="dropdown">
             <button class="dropbtn">Projects</button>
             <div class="dropdown-content">
                 <a href="school.html">School Projects</a>
                 <a href="homelabs.html">Home Labs</a>
             </div>
+        </div>
       </div>
     </div>
 
 
-  <header>
+  <section class="hero">
     <h1 class="hero">School Projects</h1>
-  </header>
+  </section>
 
   <main>
-    <section>
+    <section class="card">
       <h2>Vinetech (Senior Design Project)</h2>
       <p><strong>Technologies:</strong> Python, Pandas, PostgreSQL</p>
       <p><strong>Description:</strong> Built a data pipeline to verify and correct vineyard row/bay labels. Integrated cleaned data into a PostgreSQL database and ran experiments to improve predictions of grape yield by weight, improving data quality and model performance.</p>
     </section>
 
-    <section>
+    <section class="card">
       <h2>Washington School of the Blind (Service Project)</h2>
       <p><strong>Technologies:</strong> Python, OpenCV</p>
       <p><strong>Description:</strong> Developed a computer vision system to detect and track swimmers in real time, providing lane-based feedback to support blind swimmers. Replaced manual guidance with automated assistance to promote independence.</p>
