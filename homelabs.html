@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Lab - Maverick Clements</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f4f4f4; color: #333; }
+    header { background: #005f73; color: #fff; padding: 1rem; text-align: center; }
+    main { max-width: 900px; margin: auto; padding: 2rem; }
+    section { background: #fff; margin-bottom: 1.5rem; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    h2 { margin-top: 0; color: #005f73; }
+    ul { margin: 0; padding-left: 1.5rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Home Lab</h1>
+    <p>HPE ProLiant DL360p Gen8 running VMware ESXi 7.0</p>
+  </header>
+  <main>
+    <section>
+      <h2>Lab Infrastructure</h2>
+      <p><strong>Server:</strong> HPE ProLiant DL360p Gen8</p>
+      <p><strong>Hypervisor:</strong> VMware ESXi 7.0</p>
+      <p><strong>Storage:</strong> Local RAID + attached storage</p>
+      <p><strong>Networking:</strong> Multiple NICs with VLAN segmentation</p>
+    </section>
+
+    <section>
+      <h2>Current Virtual Machines</h2>
+      <ul>
+        <li><strong>pfSense Firewall</strong> – Core firewall & VLAN routing</li>
+        <li><strong>Windows Server 2019</strong> – Domain Controller, DHCP, DNS</li>
+        <li><strong>Linux (Ubuntu / Kali)</strong> – Security testing, automation scripts</li>
+        <li><strong>Splunk Server</strong> – Centralized syslog & security monitoring</li>
+        <li><strong>Cisco ASA / Firepower</strong> – Virtualized firewall for CCNP practice</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Focus Areas</h2>
+      <ul>
+        <li>Enterprise-style network segmentation with VLANs</li>
+        <li>Centralized logging and monitoring (Splunk)</li>
+        <li>Firewall rule tuning & IDS/IPS testing</li>
+        <li>Active Directory + Group Policy management</li>
+        <li>Cloud integration experiments (AWS/Azure VPNs)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Future Plans</h2>
+      <p>Expanding lab into hybrid-cloud setups with VPN tunneling, advanced SIEM (ELK Stack), and container orchestration (Docker/Kubernetes) for microservice testing.</p>
+    </section>
+  </main>
+</body>
+</html>
