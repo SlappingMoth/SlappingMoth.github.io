@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zoom Expand Card</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* Basic card style */
+  .card {
+    width: 200px;
+    height: 120px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 15px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
+
+  .card .basic {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .card .details {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  /* Overlay background */
+  .overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+
+  /* Expanded card */
+  .overlay .card {
+    width: 400px;
+    height: 300px;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    z-index: 11;
+  }
+
+  .overlay .card .details {
+    display: block;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px; right: 15px;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<!-- Initial card -->
+<div class="card" onclick="openCard(this)">
+  <div class="basic">Card Title</div>
+</div>
+
+<!-- Overlay -->
+<div class="overlay" id="overlay" onclick="closeCard(event)">
+  <div class="card">
+    <span class="close-btn" onclick="closeCard(event)">&times;</span>
+    <div class="basic">Card Title</div>
+    <div class="details">
+      <p>This is the expanded card content. It zooms to the center and shows extra details, images, or anything you like.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openCard(card) {
+    document.getElementById('overlay').style.display = 'flex';
+  }
+
+  function closeCard(event) {
+    // Prevent close if clicking inside the card itself
+    if (event.target.classList.contains('card') || event.target.classList.contains('basic') || event.target.classList.contains('details')) {
+      return;
+    }
+    document.getElementById('overlay').style.display = 'none';
+  }
+</script>
+
+</body>
+</html>
