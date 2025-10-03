@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Homepage</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maverick Clements - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header>
-      <h1>Welcome to My Website</h1>
-  </header>
-    
+  <!-- Navbar -->
   <div class="navbar">
     <div class="nav-left">
-      <a href="#" class="nav-link">Home</a>
-      <a href="#" class="nav-link">About</a>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
       <div class="dropdown">
         <button class="dropbtn">Services</button>
         <div class="dropdown-content">
@@ -28,7 +24,32 @@
       <img src="logo.png" alt="Logo" />
     </div>
   </div>
-   
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to My Portfolio</h1>
+    <p>I'm Maverick Clements — a Computer Science graduate with concentrations in Cybersecurity and Data Science. Explore my school projects, home lab experiments, and professional experience.</p>
+    <a href="school.html" class="cta-btn">View My Projects</a>
+  </section>
+
+  <!-- Quick Links Section -->
+  <section class="quick-links">
+    <div class="card">
+      <h2>📚 School Projects</h2>
+      <p>Explore my academic work, including data pipelines, computer vision, and security projects.</p>
+      <a href="school.html" class="card-btn">See Projects</a>
+    </div>
+
+    <div class="card">
+      <h2>🖥️ Home Lab</h2>
+      <p>Check out my HPE ProLiant DL360p Gen8 running ESXi 7.0, with virtualized firewalls, servers, and monitoring tools.</p>
+      <a href="homelabs.html" class="card-btn">Explore Lab</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Maverick Clements | <a href="mailto:MaverickClements@gmail.com">Contact Me</a></p>
+  </footer>
 </body>
 </html>
