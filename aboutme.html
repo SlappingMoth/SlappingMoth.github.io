@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - Maverick Clements</title>
+  <title>Resume - Maverick Clements</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,14 +11,14 @@
   <div class="navbar">
     <div class="nav-left">
       <a href="index.html" class="nav-link">Home</a>
-      <a href="about.html" class="nav-link active">About</a>
       <div class="dropdown">
-        <button class="dropbtn">Services</button>
+        <button class="dropbtn">Projects</button>
         <div class="dropdown-content">
           <a href="school.html">School Projects</a>
           <a href="homelabs.html">Home Labs</a>
         </div>
       </div>
+      <a href="resume.html" class="nav-link active">Resume</a>
     </div>
     <div class="nav-right">
       <img src="logo.png" alt="Logo" />
@@ -27,31 +27,68 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <h1>About Me</h1>
-    <p>A bit about my background, interests, and goals.</p>
+    <h1>My Resume</h1>
+    <p>A detailed view of my education, experience, projects, and skills.</p>
   </section>
 
-  <!-- About Content -->
-  <main class="about">
-    <section class="about-card">
-      <h2>Who I Am</h2>
-      <p>I'm <strong>Maverick Clements</strong>, a Computer Science graduate with concentrations in <strong>Cybersecurity</strong> and <strong>Data Science</strong>. I’m passionate about solving complex problems, building secure systems, and exploring how technology can be used to improve both enterprise environments and real-world communities.</p>
+  <!-- Resume Content -->
+  <main class="resume">
+    <!-- Education -->
+    <section class="resume-card">
+      <h2>Education</h2>
+      <p><strong>George Fox University</strong>, Newberg, OR</p>
+      <p>BS Computer Science (Aug 2020 – Apr 2024)</p>
+      <p><em>Concentrations: Cybersecurity and Data Science</em></p>
     </section>
 
-    <section class="about-card">
-      <h2>What I Do</h2>
-      <p>I’ve worked on projects ranging from data pipelines and computer vision to enterprise networking and homelab experimentation. My interests cover:</p>
+    <!-- Work Experience -->
+    <section class="resume-card">
+      <h2>Work Experience</h2>
+      <h3>Network Engineer Intern – Trio Technologies</h3>
+      <p><em>Mission Viejo, CA | Aug 2024 – Jun 2025</em></p>
       <ul>
-        <li>Cybersecurity (network defense, penetration testing, SIEM)</li>
-        <li>Data Science & Machine Learning (Python, Pandas, SQL, Scikit-learn)</li>
-        <li>Virtualization & Networking (VMware ESXi, pfSense, Cisco ASA/NGFW)</li>
-        <li>Automation & Scripting (Python, Bash, PowerShell)</li>
+        <li>Installed and organized network cabling (Cat5e/Cat6) for offices, meeting rooms, and server racks.</li>
+        <li>Maintained documentation for cabling layouts and switch configurations.</li>
+        <li>Assisted with hardware upgrades, including IOS firmware updates and basic switch configs.</li>
+        <li>Participated in Cisco-sponsored training for CCNA: routing, switching, IP services, troubleshooting.</li>
+      </ul>
+
+      <h3>Human Resources Associate – George Fox University</h3>
+      <p><em>Newberg, OR | Jan 2021 – Apr 2024</em></p>
+      <ul>
+        <li>Developed internal Python + SQL solutions on Linux servers to automate payroll auditing, reducing manual processing time by 98.96%.</li>
+        <li>Implemented strict access controls to protect confidential employee data (PII).</li>
+        <li>Conducted audits of paychecks, W-4, and I-9 forms to ensure compliance and accuracy.</li>
       </ul>
     </section>
 
-    <section class="about-card">
-      <h2>Where I’m Going</h2>
-      <p>My career goals are focused on <strong>cybersecurity engineering</strong> and <strong>cloud security architecture</strong>. I’m working toward expanding my skills in <strong>DevSecOps</strong>, <strong>cloud platforms (AWS, Azure, GCP)</strong>, and advanced cybersecurity frameworks.</p>
+    <!-- Projects -->
+    <section class="resume-card">
+      <h2>Projects</h2>
+      <h3>Vinetech (Senior Design Project)</h3>
+      <p><em>Python, Pandas, PostgreSQL</em></p>
+      <p>Developed a data pipeline to verify and correct vineyard row/bay labels. Integrated cleaned data into a PostgreSQL database and ran experiments to improve grape yield predictions.</p>
+
+      <h3>Washington School of the Blind (Service Project)</h3>
+      <p><em>Python, OpenCV</em></p>
+      <p>Developed a computer vision system to track swimmers in real time, providing lane-based feedback to assist blind swimmers with automated guidance.</p>
+    </section>
+
+    <!-- Certifications -->
+    <section class="resume-card">
+      <h2>Certifications</h2>
+      <ul>
+        <li><strong>Cisco Certified Network Associate (CCNA)</strong> — Dec 2024</li>
+      </ul>
+    </section>
+
+    <!-- Skills -->
+    <section class="resume-card">
+      <h2>Skills</h2>
+      <p><strong>Programming:</strong> Python, C/C++, Java, Bash, PowerShell, SQL</p>
+      <p><strong>Libraries:</strong> Pandas, NumPy, Matplotlib, Scikit-Learn, Seaborn</p>
+      <p><strong>Tools:</strong> PostgreSQL, JSON, telnet/ssh, routing/switching, Active Directory, Windows, Linux</p>
+      <p><strong>Soft Skills:</strong> Detail-Oriented, Problem-Solving, Analytical Thinking, Adaptability, Time Management, Teamwork, Strong Communication</p>
     </section>
   </main>
 
