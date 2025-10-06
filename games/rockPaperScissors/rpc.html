@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="rpc.css">
+</head>
+<body>
+<div class="game-container">
+    <h1>Rock Paper Scissors</h1>
+
+    <label for="mode-select"></label>
+    <select id="mode-select">
+        <option value="single">Single Player</option>
+        <option value="multi">Two Players</option>
+    </select>
+
+    <!-- Score Board -->
+    <div id="score-board">
+        <div>Player 1: <span id="player1-score">0</span></div>
+        <div>Player 2 / Computer: <span id="player2-score">0</span></div>
+    </div>
+
+    <!-- Choices -->
+    <div id="choices">
+        <button id="rock" class="choice">Rock</button>
+        <button id="paper" class="choice">Paper</button>
+        <button id="scissors" class="choice">Scissors</button>
+    </div>
+
+    <!-- Reset Button -->
+    <button id="reset" class="choice">Reset Game</button>
+
+    <p id="result"></p>
+</div>
+<script src="scriptgame.js"></script>
+</body>
+</html>
