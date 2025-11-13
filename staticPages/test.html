@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hover Expand Card</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+  }
+
+  .card {
+    width: 200px;
+    height: 120px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 15px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  /* On hover: zoom/expand */
+  .card:hover {
+    width: 320px;   
+    height: 250px;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  }
+
+  .basic {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .details {
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0;
+    max-height: 0;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+  }
+
+  /* Reveal details only on hover */
+  .card:hover .details {
+    opacity: 1;
+    max-height: 200px;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="basic">Card Title</div>
+  <div class="details">
+    <p>This is the expanded content. It shows up when you hover the card and disappears when you move away.</p>
+  </div>
+</div>
+
+</body>
+</html>
