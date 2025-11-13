@@ -109,7 +109,7 @@ body {
   margin-top: 80px; /* offset for fixed navbar */
   text-align: center;
   padding: 5rem 2rem;
-  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  background: linear-gradient(135deg, #000c1a, #0ea5e9);
   color: white;
 }
 
