@@ -13,7 +13,7 @@
         <div id="codebreaker">
             <label for="guess">Enter your guess:</label>
             <input type="text" id="guess" maxlength="4" placeholder="Enter 4 numbers">
-            <button id="submit-btn" type="submit">Submit Guess</button>
+            <button id="submit-btn" type="submit" onclick="validate_guess()">Submit Guess</button>
         </div>
 
         <div id="guesses-container">
@@ -29,7 +29,7 @@
 
     <div id="missed-attempts">
         <h2>Missed Attempts</h2>
-        <ul id="missed-list"></ul>
+        <p id="missed-list">0</p>
 
     </div>
 
