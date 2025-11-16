@@ -256,17 +256,6 @@ footer a:hover {
 }
 
 
-/* GENERAL PAGE STYLE */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: radial-gradient(circle at top, #1a1a2e, #0f0f1a);
-    color: white;
-    text-align: center;
-    overflow-x: hidden;
-}
-
 /* MAIN CONTAINER */
 #game-container {
     margin: 40px auto;
@@ -314,7 +303,7 @@ h1 {
 }
 
 /* BUTTON STYLE */
-button {
+.game-btn button {
     padding: 10px 18px;
     margin-left: 10px;
     background: #4cbcff;
@@ -343,24 +332,6 @@ button:hover {
     box-shadow: 0 0 10px rgba(76, 188, 255, 0.2);
 }
 
-h2 {
-    margin: 5px 0 10px;
-    font-size: 1.3rem;
-    text-shadow: 0 0 8px #4cbcff;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    padding: 8px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 6px;
-    margin: 5px 0;
-    font-size: 1.1rem;
-}
 
 /* ROCKET IMAGE */
 #rocket {
