@@ -24,11 +24,20 @@
   <!-- Page main content -->
   <main>
     <section class="quick-links">
-      <div class="card">
-        <iframe 
-          src="../games/mastermind/mastermind.html" 
-          style="width:100%; height:600px; border:none; border-radius:10px;">
-        </iframe>
+
+
+      <!-- PLAY BUTTON CARD (visible first) -->
+      <div class="card" id="play-card">
+          <button id="play-btn">Play Space Codebreaker</button>
+      </div>
+
+      <!-- IFRAME CARD (hidden at first) -->
+      <div class="card" id="game-card" style="display:none;">
+          <iframe 
+              id="game-frame"
+              src="../games/mastermind/mastermind.html"
+              style="width:100%; height:600px; border:none;">
+          </iframe>
       </div>
 
       <div class="card">
@@ -39,5 +48,13 @@
       </div>
     </section>
   </main>
+
+  <script>
+    document.getElementById("play-btn").addEventListener("click", function () {
+        document.getElementById("play-card").style.display = "none";
+        document.getElementById("game-card").style.display = "block";
+    });
+</script>
+
 </body>
 </html>
