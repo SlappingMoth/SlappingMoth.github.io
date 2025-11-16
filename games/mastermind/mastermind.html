@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Codebreaker</title>
+    <link rel="stylesheet" href="mastermind.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Space Codebreaker</h1>
+        <div id="codebreaker">
+            <label for="guess">Enter your guess:</label>
+            <input type="text" id="guess" maxlength="4" placeholder="Enter 4 numbers">
+            <button id="submit-btn" type="submit">Submit Guess</button>
+        </div>
+        <div id="guesses-container">
+            <!-- Guesses and results will be dynamically added here -->
+        </div></div>
+    <div id="guesses-container">
+        <h2>Your Guesses</h2>
+        <ul id="guess-list"></ul>
+    </div>
+    <div id="missed-attempts">
+        <h2>Missed Attempts</h2>
+        <ul id="missed-list"></ul>
+    </div>
+        <img src="rocket.png" id="rocket" alt="Rocket" />
+        <button id="hint-btn">Hint</button>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
