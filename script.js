@@ -11,7 +11,6 @@ function closeCard(event) {
   document.getElementById('overlay').style.display = 'none';
 }
 
-
 // event listener to add spinning while game loads - for games.html
 document.getElementById("play-btn").addEventListener("click", function () {
       // Show game card, hide play card
