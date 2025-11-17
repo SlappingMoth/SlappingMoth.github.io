@@ -357,3 +357,39 @@ button:hover {
     background: #ffd480;
     box-shadow: 0 0 10px #ffbf47;
 }
+
+
+
+/* The card container */
+.game-card {
+    width: 300px;
+    height: 120px;
+    margin: 20px auto;
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,150,255,0.3);
+    overflow: hidden;
+    transition: width 0.4s ease, height 0.4s ease, padding 0.4s ease;
+    padding: 20px;
+}
+
+/* When game starts, card becomes large */
+.game-card.expanded {
+    width: 90%;
+    max-width: 900px;
+    height: 700px;
+}
+
+/* Hide game content until expanded */
+#card-game {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+/* Iframe fills card */
+#game-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+}

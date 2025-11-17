@@ -20,7 +20,23 @@ document.getElementById("play-btn").addEventListener("click", function () {
 
 document.getElementById("end-btn").addEventListener("click", function () {
     
-  // hide game card, show play card
+    // hide game card, show play card
     document.getElementById("play-card").style.display = "block";
     document.getElementById("game-card").style.display = "none";     
-})
+});
+
+
+
+document.getElementById("play-btn").addEventListener("click", () => {
+    const card = document.getElementById("game-card");
+
+    // Expand card
+    card.classList.add("expanded");
+
+    // Swap content AFTER animation starts
+    setTimeout(() => {
+        document.getElementById("card-start").style.display = "none";
+        document.getElementById("card-game").style.display = "block";
+    }, 300); // matches CSS transition timing
+});
+
