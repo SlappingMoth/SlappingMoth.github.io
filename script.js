@@ -20,8 +20,7 @@ document.getElementById("play-btn").addEventListener("click", function () {
 
 document.getElementById("end-btn").addEventListener("click", function () {
     
+  // hide game card, show play card
     document.getElementById("play-card").style.display = "block";
     document.getElementById("game-card").style.display = "none";     
-
-    
 })
